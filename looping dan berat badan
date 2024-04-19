@@ -1,0 +1,90 @@
+{
+ "cells": [
+  {
+   "cell_type": "code",
+   "execution_count": 2,
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "Nilai BMI anda :  20.761245674740486\n",
+      "Berat badan anda normal\n"
+     ]
+    }
+   ],
+   "source": [
+    "# Mendapatkan informasi dari input pengguna\n",
+    "berat_badan = int(input('Berat Badan (kg) : '))\n",
+    "tinggi_badan = int(input('Tinggi Badan (cm) : '))\n",
+    "\n",
+    "# Konversi tinggi badan ke meter\n",
+    "tinggi_badan = tinggi_badan/100\n",
+    "\n",
+    "# Rumus BMI = berat badan(kg) / (tinggi badan(m) ^ 2)\n",
+    "nilai_bmi = berat_badan / (tinggi_badan**2)\n",
+    "\n",
+    "print('Nilai BMI anda : ', nilai_bmi)\n",
+    "# Sistem logika dengan if else\n",
+    "if nilai_bmi < 18.5:\n",
+    "\tprint('Berat badan anda kurang ')\n",
+    "elif nilai_bmi > 18.5 and nilai_bmi < 24.9:\n",
+    "\tprint('Berat badan anda normal')\n",
+    "elif nilai_bmi > 25 and nilai_bmi < 29.9:\n",
+    "\tprint('Anda kelebihan berat badan')\n",
+    "elif nilai_bmi > 30:\n",
+    "\tprint('Anda Obesitas')"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 5,
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "Rata-rata semua angka yang telah diinput sebelumnya adalah 6.4\n"
+     ]
+    }
+   ],
+   "source": [
+    "angka = []\n",
+    "\n",
+    "while True:\n",
+    "    num = int(input(\"Input angka = \"))\n",
+    "    \n",
+    "    \n",
+    "    if num == 0:\n",
+    "        rata_rata = sum(angka) / len(angka)\n",
+    "        print(f\"Rata-rata semua angka yang telah diinput sebelumnya adalah {rata_rata:.1f}\")\n",
+    "        break\n",
+    "    else:\n",
+    "        angka.append(num)\n"
+   ]
+  }
+ ],
+ "metadata": {
+  "kernelspec": {
+   "display_name": "Python 3",
+   "language": "python",
+   "name": "python3"
+  },
+  "language_info": {
+   "codemirror_mode": {
+    "name": "ipython",
+    "version": 3
+   },
+   "file_extension": ".py",
+   "mimetype": "text/x-python",
+   "name": "python",
+   "nbconvert_exporter": "python",
+   "pygments_lexer": "ipython3",
+   "version": "3.12.0"
+  }
+ },
+ "nbformat": 4,
+ "nbformat_minor": 2
+}
