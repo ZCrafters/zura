@@ -1,2 +1,3 @@
-# zura
-none
+# Belajar python 
+
+project yg dibuat
